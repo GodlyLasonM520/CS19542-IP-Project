@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="voice-to-text.js" defer></script>
+    <style>
+        .transparent-container {
+            background-color: rgba(255, 255, 255, 0.454);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.306);
+        }
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/grainy-gradient-background-red-white-blue-colors-with-soft-faded-watercolor-border-texture_927344-24167.jpg');
+            background-repeat: no-repeat; 
+            background-size: cover; /* Changed to cover for better scaling */
+        }
+        .p {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="log.gif" alt="Logo" class="logo"> Sky Gliders
+        </h1>
+    </header>
+    <div class="container transparent-container">
+        <h2 class="text-center mb-4">Create Your Blog</h2>
+        <p><strong>Current Language:</strong> <span id="current-language">English</span></p>
+        <button type="button" class="btn btn-outline" onclick="toggleLanguage()">Change Language</button>
+
+        <form action="blog.php" method="POST" id="blog-form">
+            <input id="blog-title" name="title" placeholder="Enter Blog Title" class="form-control mb-3" required>
+            <textarea id="content" name="content" class="form-control mb-3" placeholder="Write your blog content here..." required></textarea>
+            <button type="button" class="btn btn-outline-danger" onclick="startRecording()">Start Voice Recording</button>
+            <button type="button" class="btn btn-outline-danger" onclick="stopRecording()">Stop Voice Recording</button>
+            <button type="submit" class="btn btn-outline-danger">Post Blog</button>
+        </form>
+        <form action="view_blog.php" method="GET" class="mt-4">
+            <a href="view_blog.php" class="btn btn-outline-danger">View Your Blogs</a>
+        </form>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p class="p">&copy; 2024 Sky Gliders. <a href="logout.php">Logout</a> All rights reserved.</p>
+    </footer>
+</body>
+</html>

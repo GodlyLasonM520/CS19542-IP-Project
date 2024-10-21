@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.welcome-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+}
+.welcome-text:hover {
+    transform: translateY(-20px); /* Move the text up by 20px */
+    opacity: 0.9; /* Slightly reduce opacity */
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+h2 {
+    font-weight: 500;
+    color: #343a40;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+textarea {
+    height: 200px;
+}
+.logo {    height: 100px; /* Adjust the height of the logo */
+    margin-top: 10px;
+ /* Adjust the height of the logo */
+  }
+.log{
+    height: 100px; /* Adjust the height of the logo */
+    margin-top: 10px;
+  }
+
+  header {
+    background-color: #200024;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 20px;
+    
+}
+header h1 {
+    
+    font-size: 32px;
+    color: white;
+    margin-left: 20px;
+}
